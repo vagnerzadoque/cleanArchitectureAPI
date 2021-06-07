@@ -7,3 +7,11 @@ git config --local => configurações para o projeto
 
 git config --global core.editor code (aqui estamos dizendo, use o vscode para editar)
 git config --local ou --global --edit (ele abrira o editor com os arquivo de config)
+
+git commit --amend --no-edit => para unir o comit anterior ao novo sem editar texto
+
+✔ instalar o husky para controlar e interceptar os comites do git @done(21-06-07 20:56)
+npm i -D husky
+
+instalar o lint-staged = para colocar chamar os comandos do eslint apenas nos stageds
+npm i -D lint-staged
