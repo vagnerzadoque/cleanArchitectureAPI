@@ -1,0 +1,9 @@
+✔ Configurar o Git @done(21-06-07 15:50)
+✔ git config --list => Mostrar configurações @done(21-06-07 15:09)
+Existem 3 niveis de configuração do Git
+git config --system => configuração para qualquer projeto no computador e qualquer usuario
+git config --global = configurações para seu usuario
+git config --local => configurações para o projeto
+
+git config --global core.editor code (aqui estamos dizendo, use o vscode para editar)
+git config --local ou --global --edit (ele abrira o editor com os arquivo de config)
