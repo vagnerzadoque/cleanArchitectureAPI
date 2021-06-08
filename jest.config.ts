@@ -1,10 +1,17 @@
 /*
- * For a detailed explanation regarding each configuration property and type check, visit:
+ * For a detailed explanation regarding each configuration property, visit:
  * https://jestjs.io/docs/configuration
  */
 
-export default {
-  roots: ['<rootDir>/src'],
+module.exports = {
+  collectCoverage: true,
+  collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
+  coverageDirectory: 'coverage',
+  testEnvironment: 'node',
+  Transform: {
+    '.+\\.ts$': 'ts-jest'
+  },
+  coverageProvider: 'babel'
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 
@@ -15,21 +22,14 @@ export default {
   // cacheDirectory: "C:\\Users\\vsbarbosa\\AppData\\Local\\Temp\\jest",
 
   // Automatically clear mock calls and instances between every test
-  clearMocks: true,
+  // clearMocks: true,
 
   // Indicates whether the coverage information should be collected while executing the test
-  collectCoverage: true,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
   // collectCoverageFrom: undefined,
 
   // The directory where Jest should output its coverage files
-  collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
-  coverageDirectory: 'coverage',
-  testEvironment: 'node',
-  transform: {
-    '.+\\.tss': 'ts-jest'
-  }
 
   // An array of regexp pattern strings used to skip coverage collection
   // coveragePathIgnorePatterns: [
@@ -37,7 +37,6 @@ export default {
   // ],
 
   // Indicates which provider should be used to instrument code for coverage
-  // coverageProvider: "babel",
 
   // A list of reporter names that Jest uses when writing coverage reports
   // coverageReporters: [
