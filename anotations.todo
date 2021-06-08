@@ -15,3 +15,4 @@ npm i -D husky
 
 instalar o lint-staged = para colocar chamar os comandos do eslint apenas nos stageds
 npm i -D lint-staged
+ttt
