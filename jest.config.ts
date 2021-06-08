@@ -4,6 +4,7 @@
  */
 
 module.exports = {
+  roots: ['<rooDir/src'],
   collectCoverage: true,
   collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
   coverageDirectory: 'coverage',
